@@ -1,0 +1,125 @@
+static website - a website where the content is fixed
+html-structure
+css-stylings
+bootstrap-Framework-collection of pre defined code
+responsive(dynamic ga different vatilo kanipinchatam. ex: mobile,laptop,tab)
+javascript-dynamic websites-user can able to interact
+react-react is a js library(imp)
+(real time lo use chesevi react)
+-----
+
+HTML - Hypertext markup language
+hypertext-text reference to other text
+markup- a set of rules that defines hoe content should be displayed on browser
+it is a standard markup language tha is used to create structure for webpage
+it contains series of elements that represented by tags
+
+tag
+<resv words>--open tag
+</resv words>--closing tag
+ 
+element
+open tag + content+ clsing tag
+<h1>primary heading</h1><h1>primary heading</h1>
+Types of elements
+--------------------
+container tags or pair tags 
+<h1>primary heading</h1>
+
+self closinf tags or empty or void tags
+
+Vs code
+live server
+live preview
+prettier
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my page</title>
+    </head>
+    <body>
+        <!--
+        1)heading tags
+        <h1>largest heading</h1>
+        <h2>second largest heading</h2>
+        <h3>3rd largest heading</h3>
+        <h4>4th largest heading</h4>
+        <h5>2nd smallest heading</h5>
+        <h6>smallest heading</h6>
+
+        2) paragraph tag
+        <p>this is used to represent paragraph content</p>
+
+        3)hr and br
+        horizantal reler-->self closing tag
+        <hr>
+
+        4.break tag-it is used to insert line break
+        <br>
+        attributes
+        it is used to provide extra information about an elements always comes in key:value pair
+         <a href='https://www.google.com/'> google</a>
+         href-- it is used to define the resource link
+
+
+        5.anchor tag
+        it is used for routing or navigation
+        external routing
+        1.absolute url- complete url -- external links or c:/users/username/
+        <a href='https://www.google.com/'> google</a>
+        href it is used to definr the resourse link
+        ( 1. absolute url :(complete url) external links or c:/users/urname
+                                   <a></a>)
+
+        b.target attributes
+        it tell the browser where the resource
+        target="_self" 
+         target="_blank"
+
+     
+        2. relative url : for customized links or internal links
+                                   <a href = 'about.html'>html</a>
+
+ 6. attribute tag: used to provide additional information about an element
+           always comes in key:value pair
+           <a href = 'https://www.google.com/'>google </a>
+           href -- it is used to define the resourse link
+           
+           target attribute : it tells the browser where the should be opened
+           target='_self' : it opens the link in the same tab
+           target='_blank' : it opens the link in the new tab
+
+
+        7. list tags: used to create a list of items
+           1) ordered list : it is used to create a list of items in a specific order
+           <ul>
+            <li>list item 1</li>
+            <li>list item 2</li>
+           </ul>
+           2) unordered list : it is used to create a list of items in a specific order
+               <ol>
+                <li>list item 1</li>
+                <li>list item 2</li>
+              </ol>
+        <h1>my first webpage</h1>
+        <h1>largest heading</h1>
+        <h2>second largest heading</h2>
+        <h3>3rd largest heading</h3>
+        <h4>4th largest heading</h4>
+        <h5>2nd smallest heading</h5>
+        <h6>smallest heading</h6>
+        <hr>
+         <p>this is used to represent paragraph content</p>
+        <p>Lorem ipsum dolar<br>sit amet constructor adipistring elit . </p>
+        <hr>
+        absolute link
+        <a href='https://www.google.com/'> google</a>
+        <hr>
+        <a target="_self" href='https://www.google.com/'> google</a>
+        
+        <a target="_blank" href='https://www.google.com/'> google</a>
+            <a href="about.html"> html </a>
+
+        
+    </body>
+</html>
