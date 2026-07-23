@@ -1,139 +1,52 @@
-<!--
-tables
-row
-columns- cells
-tables are defined with table tags
-rows are defined with tr tag
-cells are defined 
-<h1>Education</h1>
-<table>
-table attributes
-border
-cellpadding-- it creates the spacing with in the cell
-cellspacing--it creates space around the cell-->
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poornima Portfolio</title>
+    <title>Document</title>
 </head>
 <body>
+    
+    <form action="" align="center">
+    <h1>Create Your Count</h1>
 
-    <!-- Header Section -->
-    <h1>Poornima Pappu</h1>
-    <p>Web Developer | Student</p>
-    <img width="300" height="400" src="https://www.google.com/sea
-    <img width="300" height="400" src="/fff.jpg"
+    <label for="inp">Enter your name</label><br>
+    <input name="Poornima" type="text" id="inp"  name="username"placeholer="enter username">
+    <br><br>
+    <label for="">Enter your email</label><br>
+    <input type="email"  placeholer="enter your email">
+    <br><br>
+    <label for="">enter your password</label><br>
+    <input type="password"  name="" id="">
+    <br><br>
+    <label for="">enter your confirm password</label><br>
+    <input type="confirm password"  name="" id="">
+    <br><br>
+    <label for="">Gender</label><br>
+    <input type="radio"  name="skillset" id="" value="male">
+    <label for="">male</label>  
 
-    <!-- Navigation -->
-    <a href="#about">About Me</a> |
-    <a href="#achievements">Achievements</a> |
-    <a href="#education">Education</a> |
-    <a href="#projects">Projects</a> |
-    <a href="#contact">Contact</a>
+    <input type="radio"  name="skillset" id="" value="female">
+    <label for="">female</label>
+    
+    <input type="radio"  name="skillset" id="" value="other ">
+    <label for="">other</label> 
+    <br><br>
+    <label for="">Date Of Birth</label><br>
+    <input type="datetime-local"><br><br>
 
-    <hr>
+    <label for="country">Country</label><br>
+    <select name="country" id="country">
+    <option value="India">india</option>
+    <option value="america">america</option>
+    <option value="africa">africa</option>
+    </select>
+    <br><br>
 
-    <!-- About Section -->
-    <h2 id="about">About Me</h2>
-    <p>
-        I am Poornima Pappu, a Computer Science student and aspiring Web Developer.
-        I am learning HTML, CSS, JavaScript, Python, and MySQL to build responsive and user-friendly web applications.
-    </p>
+    <input type="checkbox" required><label for="">i agree for trems and conditions</label><br><br>
+    <button type="submit">submit</button>
 
-    <hr>
 
-    <!-- Achievements Section -->
-    <h2 id="achievements">Achievements</h2>
-
-    <h3>Unordered List</h3>
-    <ul>
-        <li>Completed HTML course</li>
-        <li>Built multiple projects</li>
-        <li>Practiced problem-solving regularly</li>
-        <li>Improving my coding skills every day</li>
-    </ul>
-
-    <h3>Ordered List</h3>
-    <ol>
-        <li>Completed HTML course</li>
-        <li>Built multiple projects</li>
-        <li>Practiced problem-solving regularly</li>
-        <li>Improving my coding skills every day</li>
-    </ol>
-
-    <hr>
-
-    <!-- Education Section -->
-    <h2 id="education">Education</h2>
-
-    <table border="1" cellpadding="10" cellspacing="0" width="90%" height="200">
-        <tr>
-            <th>Qualification</th>
-            <th>Institution</th>
-            <th>Year</th>
-            <th>Location</th>
-        </tr>
-
-        <tr>
-            <td>High School</td>
-            <td>XYZ School</td>
-            <td>2018 - 2023</td>
-            <td>Vizianagaram, India</td>
-        </tr>
-
-        <tr>
-            <td>B.Sc. Computer Science</td>
-            <td>Maharaja College</td>
-            <td>2023 - 2026</td>
-            <td>Vizianagaram, Andhra Pradesh</td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <!-- Projects Section -->
-    <h2 id="projects">Projects</h2>
-    <p>Campus Drive Management System, ATM Management System, and other web development projects.</p>
-
-    <hr>
-
-    <!-- Contact Section -->
-    <h2 id="contact">Contact</h2>
-
-    <a href="tel:+918977068193">📞 Call Me</a><br><br>
-
-    <a href="mailto:poornima.pappu05@gmail.com">📧 Email Me</a><br><br>
-
-    <a href="https://wa.me/918977068193" target="_blank">💬 WhatsApp Me</a>
-
-    <h1>Projects</h1>
-    <table border = "1" cellpadding ="10", cellspacing ="5">
-        <tr>
-            <td>
-                <h3>Portfolio Website</h3>
-                <p> A person portfolio built using HTML to showcase my skills and projects.</p>
-                <a href = "https://www.google.com/"> View Project</a>
-            </td>
-            <td>
-                <h3> Student Registration Form</h3>
-                <p> A student registration form built using HTML to collect student information.</p>
-                <a href = "https://www.google.com/"> View Project</a>
-            </td>
-            <td>
-                <h3> Simple calcuator</h3>
-                <p> A simple calculator built using HTML to perform basic arithmetic operations.</p>
-                <a href = "https://www.google.com/"> View Project</a>
-            </td>
-                
-
-        </tr>
-    </table>
-
+    </form>
 </body>
 </html>
