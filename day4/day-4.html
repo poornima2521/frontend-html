@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+    <!--
+    css- cascading style sheets
+    cascading=flowing
+    styles-properties
+    sheets-documents
+
+    it is used to describe the presentstion of a html document
+    it deals with colour,text,fonts,backgrounds,animations,layouts,and media queries
+    how to insert css
+    1.inline css
+    styles are adedd to the html elements itself by using style attribute
+    <h1 style='color:red;'>inline content</h1>
+    
+    2.internal css
+    styles are added to the documnets using styletag in head section
+    <style>
+
+    </style>
+
+    selectrors:
+    it is used to target the html elements for applying styles
+
+    syntax
+    selector{
+    decloration
+    property:value;
+    }
+    h2{
+    color:green;
+    }
+
+    3.external css
+    in external css styles are defined in ecternal file that has .css ectention and linked with link tag
+
+    high specificity- high precedence
+    inline having high specificity
+    based on how we define - preferred internal then external
+    
+
+    Selectors:
+    1.simple selectors
+        a.element selector or tagname selector
+        style will be spplied based on a element
+        h1{
+        color:red
+        }
+        b.class selector
+        it is deenoted by
+
+
+        c.id selector
+        it is used to 
+    2.combinators
+    
+    3.psedo class
+    4.attributes
+
+
+
+    specifycity in selectors
+    1.id having high specifycity
+    2.tagname
+
+
+    bosmodel:
+    it describes the presentation of an element
+    it contains four components
+
+    1.content
+        a.width:50%;
+        b.height:200px;
+    2.padding
+    it is the space around the content
+    padding:20px;
+    padding: 10px 20px   30px    40px;
+            top   right bottom left
+    padding: 10px 20px   30px;
+            top    right/left  bottom
+    padding: 10px 20px ;
+            top/bottom  right/left;
+
+3.boarder
+it is line around the padding
+boader: 1px solid black;
+        thickness style color;
+
+    style--- solid,dotted,double,inset,none,dashed,ridge,groove,outset
+    border-radius:20px;
+4.margin
+it is space around the element or between the 
+margin:20px;
+margin:20px 10px 30px;
+margin:20px 10px 30px 40px;
+
+    -->
+
+    <link rel=""stylesheet" href=""demo.css">
+    <style>
+        h1{
+            color:green;
+        }
+        .title{
+            color:green;
+            background:yellow;
+            width:30%;
+            height:200px;
+            padding:20px;
+            padding: 10px 20px   30px   40px;
+            padding: 10px 20px   30px   40px;
+            padding: 10px 20px;
+            border: 5px solid black;
+            border-radius:210px;
+            margin:10px ;
+            margin:20px 10px;
+            margin:20px;
+            display :inline-block;
+            background-image: url(https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp);
+
+            background-repeat:no-repeat ;
+            background-size:cover ;
+            background-size:contain ;
+            background-size:100% 100% ;
+
+            /* background-attachment:fixed;*/
+        }
+        #el1{
+            color:blue; 
+        }
+        h2{
+    color:green;
+    }
+    div{
+
+    }
+    #hello{
+        background-image:url(https://static.vecteezy.com/system/resources/thumbnails/060/843/811/small/close-up-of-raindrops-on-leaves-hd-background-luxury-hd-wallpaper-image-trendy-background-illustration-free-photo.jpg);
+    }
+    </style>   
+</head>
+
+<body>
+    <div>block level element</div>
+
+
+    <h1 style='color:red;'>inline content</h1>
+    <h2>internal content</h2>
+    <h3>external content</h3>
+    
+    <h1>content</h1>
+    <h1 class="title" id="hello">inline content</h1>
+    <h1 class ="title" id="el1">internal content</h1>
+    <h1 class="title" id="hello" >external content</h1>
+    <h1 class="title" id="el1">external content</h1>
+    <h1 class="title" id="hello">external content</h1>
+
+</body>
+</html>
