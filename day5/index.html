@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        Combinators - it is used to apply styles based on a relation
+        child selector - it is used to apply styles to the direct child
+        header>button {}
+        descendent selector - it is used to apply styles to all childs
+        header button
+
+        universal selecetor- *
+        *{
+            border: 1px solid white;
+        }
+            it is used to apply style to every element
+
+            text properties
+            text-align:center right left;
+            text-shadow:hoofset voofset blurradius color
+            text-shadow:1px 1px 1px black;
+
+
+        font properties
+        1)font-family:Times New Roman
+        2)font-size:1rem/2rem/1.2rem
+        3)font-weight:100-900;(normal-bold)
+
+
+        */
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        header,footer{
+            background-color: rgb(4, 4, 99);
+            text-align: center;
+            padding:10px;
+        }
+        header>button {
+            color:white;
+            border-color: white;
+            background-color: blue;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .s1
+        {
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdJ44yPSJfbimli4Q1johXB_rclOh7UjzLkSI-7imdZQ&s=10);
+            color: white;
+            height: 600px;
+            background-size: 100% 100%;
+            padding:250px 20px;
+        }
+        .s2
+        {
+            text-align: center;
+            padding: 100px;
+        }
+        .box
+        {
+            height: 100px;
+            width: 100px;
+            color:white;
+            display: inline-block;
+            margin: 10px;
+            border-radius: 10px;
+            padding:40px 10px;
+            box-shadow: 0px 1px 6px 1px black;
+            transition: all 1s;
+        }
+        .box:hover
+        {
+            transform:rotate(360deg);
+        }
+        .card
+        {
+            height:150px;
+            width: 400px;
+            padding: 30px;
+            margin:10px;
+            border: 2px solid blue;
+            display: inline-block;
+            border-radius: 15px;
+            box-shadow: 0px 1px 3px 1px rgb(101, 101, 224);
+            transition: all 1s;
+        }
+        .card:hover{
+            transform: translate(0px,-20px);
+        }
+        .s3
+        {
+            background: whitesmoke;
+            text-align: center;
+            padding:100px;
+        }
+        .s4
+        {
+            width: 60%;
+            margin:auto;
+            text-align: center;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .font{
+            height:50px;
+            width: 500px;
+            margin: 10px;
+            padding:15px;
+            background:rgb(181, 206, 239);
+            border-radius: 15px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <button>Home</button>
+        <button>About</button>
+        <button>Services</button>
+        <button>Contact</button>
+
+    </header>
+    <section class="s1"> 
+        <h1>Learn CSS Through Projects</h1><br>
+        <p>This project demonstrate CSS colors, Backgrounds, Flexbox, Box Model, Typography
+            , Shadows, and Responsive Design in one modern webpage.
+        </p>
+    </section>
+    <section class="s2">
+        <h1>🎨 CSS Colors</h1>
+        <br>
+        <div class="box" style="background-color: red;">Red</div>
+        <div class="box" style="background-color: green;">Green</div>
+        <div class="box" style="background-color: blue;">Blue</div>
+        <div class="box" style="background-color: violet;">Violet</div>
+    </section>
+    <section class="s3">
+        <h1>📦 CSS Box Model</h1>
+        <br>
+        <div class="parent">
+            <div class="card">
+                <h3>Card One</h3>
+                <p>Padding in CSS is the space inside an element, between its content and border.
+                    It creates inner spacing, making the content appear farther from the border.</p>
+            </div>
+            <div class="card">
+                <h3>Card Two</h3>
+                <p>Padding in CSS is the space inside an element, between its content and border.
+                    It creates inner spacing, making the content appear farther from the border.</p>
+            </div>
+            <div class="card">
+                <h3>Card Three</h3>
+                <p>Padding in CSS is the space inside an element, between its content and border.
+                   It creates inner spacing, making the content appear farther from the border.</p>
+            </div>
+        </div>
+    </section>
+    <section class="s4">
+        <h1 >CSS Fonts</h1>
+        <div>
+        <div class="font" style="font-weight: 300;">
+            Light Font Weight(300)
+        </div>
+        <div class="font" style="font-weight: 400;">
+            Normal Font Weight(400)
+        </div>
+        <div class="font" style="font-weight: 700;">
+            Bold Font Weight(700)
+        </div>
+        </div>
+        <p>This paragraph demonstrates font-family, font size, letter-spacing, line-height, and font-weight properties</p>
+    </section>
+    <footer style="color: white;text-align: center;" >
+        @CopyRights
+    </footer>
+</body>
+</html>
