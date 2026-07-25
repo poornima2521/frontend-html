@@ -4,49 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* div{
+            background:yellow;
+           padding:30px;
+           width:50%;
+            height:50px;
+             width:50vw;
+             height:100vh;
+
+         */
+        /* p{
+            background:blue;
+            width:50%;
+            height:50%;
+            width:50vw;
+            font-size:2rem;
+        }
+        html{
+            font-size:10px;
+        } */
+
+        /*
+        Flexbox
+        flex is used to create i dimentional layouts 
+        navbor,cards,sections
+        it has flexcontainer properties(parent) and flexitem(child properties)
+        1.
+        2.flex-direction:
+        it is used to change the direction of flex items
+        rem -root :root element
+        */
+        .parent{
+            display:flex;
+            /* flex-direction:column;
+            flex-direction:row;
+            flex-direction:row-reverse;
+            flex-direction:column-reverse; */
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            justify-content: center;
+            justify-self: end;
+            height:100vh;
+
+        /* align-items: end;
+        align-items: center;
+        align-items: start; */
+        flex-wrap:wrap-reverse;
+        align-content: center;
+        align-content: start;
+        align-items: end;
+        align-content: space-between;
+        align-content: space-evenly;
+        align-content: space-around;
+
+
+
+
+
+
+        }
+        .child{
+            background:lightsalmon;
+            padding:10px;
+            border:2px solid;
+            width:25%;
+        }
+    </style>
 </head>
 <body>
+    <!-- <div>content<p>paragraph</p></div>  -->
+   <div class="parent">
+    <div class="child">child1</div>
+    <div class="child">child2</div>
+    <div class="child">child3</div>
+    <div class="child">child4</div>
+    <div class="child">child1</div>
+    <div class="child">child2</div>
+    <div class="child">child3</div>
+    <div class="child">child4</div>
+   </div>
+
     
-    <form action="" align="center">
-    <h1>Create Your Count</h1>
 
-    <label for="inp">Enter your name</label><br>
-    <input name="Poornima" type="text" id="inp"  name="username"placeholer="enter username">
-    <br><br>
-    <label for="">Enter your email</label><br>
-    <input type="email"  placeholer="enter your email">
-    <br><br>
-    <label for="">enter your password</label><br>
-    <input type="password"  name="" id="">
-    <br><br>
-    <label for="">enter your confirm password</label><br>
-    <input type="confirm password"  name="" id="">
-    <br><br>
-    <label for="">Gender</label><br>
-    <input type="radio"  name="skillset" id="" value="male">
-    <label for="">male</label>  
-
-    <input type="radio"  name="skillset" id="" value="female">
-    <label for="">female</label>
     
-    <input type="radio"  name="skillset" id="" value="other ">
-    <label for="">other</label> 
-    <br><br>
-    <label for="">Date Of Birth</label><br>
-    <input type="datetime-local"><br><br>
-
-    <label for="country">Country</label><br>
-    <select name="country" id="country">
-    <option value="India">india</option>
-    <option value="america">america</option>
-    <option value="africa">africa</option>
-    </select>
-    <br><br>
-
-    <input type="checkbox" required><label for="">i agree for trems and conditions</label><br><br>
-    <button type="submit">submit</button>
-
-
-    </form>
 </body>
 </html>
