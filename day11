@@ -1,0 +1,267 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    static website:(content constent)
+    dynamic websites:js-- scripting language is used in js  at olden days but now we can use javascript
+
+    features
+    -----------
+    addtocart
+    filters
+    sorting
+    form validations(user iche data validate cheyyali)
+    crud
+
+
+    java scripit is a high levele interprinted programming language that is used to create dynamic nature to the websites.
+
+    it was introduced in 1991 by brendan eich
+    es1
+    es2
+    es3
+    es4
+    es5(this was used)-- pre requistic(we can not build the real world appliactions)
+
+
+    How to insert js
+    1.inline
+    <button onclick='console.log("inline.js")'>click me </button>
+
+    2.internal(ending in body)
+    <script>
+        console.log("internal.js")
+    </script>
+
+    3.external
+
+    demo.js
+      console.log("external.js")
+     <script src='demo.js'></script>
+
+
+   
+    variables: this are like containers which is used to sotre the data and data could be anything
+
+    variables are defined with var,let and const keywords followed by variable name follewed by value
+    <script>
+    var a=10;
+    let b=20;
+    const c=30;
+    consile.log(a,b,c)
+    </script>
+
+    variables terms
+    variable declaration
+    var a;
+ 
+
+    undefined(it is a datatype)
+    console,log(a);
+
+  
+    assniment
+    var b;
+    b=20;
+    console.log(b)
+
+    initialization
+    var c=30;
+
+    not defined
+    console.log(d)
+
+
+    hoisting
+      hoisting is a behaviour of js where the declaration of a variablle and functions  are moved  to top even 
+
+
+    datatypes:this are two types
+    1.premetive datatypes:
+    it stores the single value 
+    which are immutable
+    which stores in stacks
+
+
+    1.strings
+    it is a collection of charactres that are enclosed in ' ' or " " 0r ``
+    strings are immutable
+    var s='hello world'
+    console.log(s[0])
+    s[0]='z'
+    console.log(s)
+
+    2.numbers
+    var n=10
+    var m=-11
+    var num=10.2
+    consile.log(n,m,num)
+
+    3.boolean
+    true or false
+    var isadmin=true;
+    var isadmin=false;
+    var membership=true;
+    var isactive=true;
+    console.log(isadmin)
+
+
+    4.undefined
+    (it is a datatype)
+    console,log(a);
+
+
+    5.null 
+    it is a intentional  abseence of a value
+    var id=null
+    var empname=null
+    console.log(id+10)
+
+
+
+
+    2.non premetive datatypes:
+    which stores multiple values
+    which are mutable
+    which stires in heap
+
+
+    1.arrays
+    it is used to store multiple values in single variables 
+    it stores bothe homogeneous and hetrogeneous
+    it can be accessed via numbered index
+
+
+
+    var att=[1,true,'hello']
+    console.log(arr)
+
+    console.log(arr[2])
+    arr[2]='hello world'
+    console.log(arr)
+
+ 2.objects
+ it is used to store the collection of data in key value pairs
+ it can be accesed by named indexing
+
+ let obj={
+ batchn0:2,
+ batchcount:25,
+ pythonbatchno:3
+ }
+
+ obj.batchcount=30;
+ console.log(obj)
+console.log(obj.batchcount)
+ console.log(obj['pythonbatchno'])
+
+3.functions
+fuction greet(){
+console.log('helloworld')
+}
+greet()
+
+
+
+
+
+    operators
+    functions
+    conditional statements
+    loops
+    dom(document object model)
+    asynchronous promises
+    api calling
+
+
+
+
+     -->
+
+<button onclick='console.log("inline.js")'>click me </button> 
+<script src='demo.js'></script>  
+
+
+<script>
+    // var a;
+    // console.log(a);
+
+    // var b;
+    // b=20
+    // console.log(b);
+
+    // var c=30
+    // console.log(c);
+
+    // console.log(d)
+
+//  var s='hello world'
+//     console.log(s[0])
+//     s[0]='z'
+//     console.log(s)
+
+var n=10
+var m=-11
+var num=10.2
+consile.log(n,m,num)
+
+var isadmin=true;
+ var isadmin=false;
+var membership=true;
+var isactive=true;
+console.log(isadmin)
+
+
+<script>
+        // // var a;
+        // // console.log(a)
+        // var b;
+        // b=30;
+        // console.log(b)
+
+        // var c=33
+        // console.log(c)
+        
+        // console.log(z)
+        // var z=11
+
+    var s='helo world'
+    console.log(s[0])
+    s[0]='z'
+    console.log(s)//helo world
+
+    var n=11
+    var m=-11
+    var num=22.2
+    console.log(n,m,num)
+
+    function greet(){
+    console.log('helloworld')
+    }
+    greet()
+
+    let obj={
+    batchno:2,
+    batchcount:22,
+    pythonbatchno:3
+    }
+    console.log(obj)
+    console.log(obj.batchcount)
+    console.log(obj['pythonbatchno'])
+    </script>
+
+
+
+
+</script>
+
+    
+
+
+</body>
+</html> 
