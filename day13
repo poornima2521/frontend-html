@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* loops -for ehile dowhile for in for off
+
+        
+        arrow functions
+
+        let arrowfun=(a,b){
+        return a+b
+        }
+        
+        arrowfunction:it is a more consice way of writing a function in simple syntax
+
+        let arrowfun=(a,b)=>{
+        return a+b
+        console.log(arrowfun(1,2))
+        }
+         
+        we can eleminate retun if there is a single statement
+         let arrowfun=(a,b)=> a+b
+
+
+
+
+
+        anonamysos function:it is a function defined with a function name
+        let an=function{
+        console.log('hello world')
+        }
+        an()
+
+        callback function:
+        it is a functoion when function definition is passed to another function as a argument and later execution of outer function
+
+        assro cart ----payment-----order
+
+        closures:when a inner function having access and can able to change the variable which is declared in outer function even after the execution
+
+
+
+
+
+
+        */  
+        // function sum(a,b){
+        //     return a+b
+        // }
+
+        // sum(2,3)
+
+        // let arrowfun=(a,b)=> a+b
+        // consile.log(srrowfun(2))
+        // consile.log(srrowfun(5))
+
+        // let an=function(){
+        // console.log('hello world')
+        // }
+        // an()
+
+        // function addtocart(callback){
+        //     console.log('products added to card')
+        //     callback(order)
+        // }
+        // function payment(callback){
+        //     setTimeout(()=>{
+        //     console.log('payment completed')
+        //     callback()
+        // },7000)
+        // }
+
+        // function order(){
+        //     console.log('order placesd')
+        // }
+        //  asstocart(payment)
+
+        // function outer(){
+        //     let count=0
+        // console.log('outer function is executed')
+        // return function(){
+        //     count++
+        //     console.log(count)
+        //     console.log('inner function executed')
+        // }
+
+        // }
+        // let a=outer()
+        // a()
+        // a()
+        
+
+
+
+    </script>
+    <h1 class="cart-title">mini shoping</h1>
+    <h3 class="cart-title">cart items <span></span></h3>
+
+</body>
+</html>
