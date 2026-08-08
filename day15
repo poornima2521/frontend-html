@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        synchronous  code
+        which executes line by line
+
+        asynchronous 
+        which executes parelally ehich take time
+        -api calls,settimeout,setinterval,promises,async await
+        
+        event loop echanisum
+        call stack
+        webapi
+        callback que
+        event loop
+
+
+        console.log('first')
+
+        setTimeout(()=>{
+            console.log('second')
+        },100)
+
+        console.log('third')
+
+       
+        promsis
+        it represents the evential complition or failure of an asynchronous operation
+         ex:mobiles
+
+        promsis states
+        pending
+        success or resolved
+        failure or rejected
+
+        creating a promsie:
+        let prom=new promise((res,rej)=>{
+        val=10
+        if (var==10){
+        res('promise is resolved')
+        }else{
+        rej('promise is rejected')
+        }
+        })
+
+        consuming a promise:
+        1).then.catch
+        2)async await
+
+    
+
+        let prom=new Promise((res,rej)=>{
+        val=10
+        if(val==10){
+        res('promise is resolved')
+        }else{
+        rej('promise is rejected')
+        }
+        })
+
+      prom.then((result)=>console.log(result))
+      .catch((error)=>console.log(error))
+
+        // async makes the function asynchronous function
+    async function getprom(){
+        // await pauses an execution until the promise is selected
+        let data=await prom
+        console.log(data)
+    }
+    getprom()
+
+
+    fetch(url,httpmethod)
+
+    fetch is used to make network request (apicall)
+    fetch returns promise
+
+    1)then catch
+    2)async
+
+
+
+
+
+
+
+
+      */
+
+
+        let prom=fetch('https://fakestoreapi.com/products')
+
+        prom.then((data)=>data.json())
+        .then((finaldata)=>console.log(finaldata))
+        .catch((error)=>console.log(error))
+
+        async function getdata(){
+        let data=await fetch('https://fakestoreapi.com/products')
+        let finaldata=await data.json()
+        console.log(finaldata) 
+        }
+        getdata()
+
+
+
+
+    </script>
+    
+</body>
+</html>
