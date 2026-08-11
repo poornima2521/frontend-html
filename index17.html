@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        sort method
+        let arr=[83,22,61,1,4]
+        let sortedarr=arr.sort((a,b)=>{
+       
+        return a-b
+         })
+
+        console.log(sortedarr)
+
+ 
+           
+        let arr=[83,22,61,1,4]
+        let sortedarr=arr.sort((a,b)=>{
+       
+        // return a-b
+        return b-a
+         })
+        console.log(sortedarr)
+
+        let data=[
+            {name:'poorni',age:20},
+            {name:'hari',age:30},
+            {name:'ravi',age:45},
+            {name:'anu',age:22}
+        ]
+        let sorteddata=data.sort((a,b)=>{
+            return a.age-b.age
+        })
+        console.log(sorteddata)
+
+
+    spread operator:it is used to spred the values of an iterables
+    (strings,objects,and array)and also it isused for merging
+  
+
+// saloo copy
+    let a=['html','css']
+    let b=a
+    b[0]='react'
+    console.log(a)
+    console.log(b)
+// deep copy
+ let c=['html','css']
+ let d=[...c]
+ d[0]='react'
+console.log(c)
+console.log(d)
+
+
+let obj={
+    name:'poorni',
+    age:20
+}
+let obj2={...obj}
+obj2.name='sai'
+console.log(obj)
+console.log(obj2)
+
+let arr1=[1,2,3]
+let arr2=[4,5,6]
+console.log([...arr1,...arr2])
+
+let o1={city:'vizag'}
+let o2={city:'vzm'}
+console.log({...o1,...o2,country:'India'})
+
+
+Destructring
+it is the process of extracing values from object and array and assigned  to variables
+
+  */
+
+let data=[[['html','css'],['js','react']],[['flask','springboot'],['python','java']]]
+let [[static,dynamic],[framework,language]]=data
+console.log(framework[0])
+console.log(data[1][0][0])
+
+
+let obj={
+    name:'sai',
+    age:30,
+    address:{
+        city:'vizag',
+        state:'ap'
+
+    }
+}
+let{name,age,address:{city,state}}=obj
+console.log(city)
+
+
+
+
+    </script>
+    
+</body>
+</html>
+
+

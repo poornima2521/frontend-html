@@ -1,108 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced To-Do App</title>
+
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+      }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* div{
-            background:yellow;
-           padding:30px;
-           width:50%;
-            height:50px;
-             width:50vw;
-             height:100vh;
-
-         */
-        /* p{
-            background:blue;
-            width:50%;
-            height:50%;
-            width:50vw;
-            font-size:2rem;
-        }
-        html{
-            font-size:10px;
-        } */
-
-        /*
-        Flexbox
-        flex is used to create i dimentional layouts 
-        navbor,cards,sections
-        it has flexcontainer properties(parent) and flexitem(child properties)
-        1.
-        2.flex-direction:
-        it is used to change the direction of flex items
-        rem -root :root element
-        */
-        .parent{
-            display:flex;
-            /* flex-direction:column;
-            flex-direction:row;
-            flex-direction:row-reverse;
-            flex-direction:column-reverse; */
-            justify-content: space-between;
-            justify-content: space-evenly;
-            justify-content: space-around;
-            justify-content: center;
-            justify-self: end;
-            height:100vh;
-
-        /* align-items: end;
+      body {
+        background: #f4f4f4;
+        display: flex;
+        justify-content: center;
         align-items: center;
-        align-items: start; */
-        flex-wrap:wrap-reverse;
-        align-content: center;
-        align-content: start;
-        align-items: end;
-        align-content: space-between;
-        align-content: space-evenly;
-        align-content: space-around;
+        height: 100vh;
+      }
 
+      .container {
+        width: 450px;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
 
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
 
+      .input-box {
+        display: flex;
+        gap: 10px;
+      }
 
+      input {
+        flex: 1;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+      }
 
+      button {
+        padding: 12px 20px;
+        border: none;
+        background: black;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
 
-        }
-        .child{
-            background:lightsalmon;
-            padding:10px;
-            border:2px solid;
-            width:25%;
-        }
+      button:hover {
+        background: #333;
+      }
+
+      .task {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f9f9f9;
+        padding: 12px;
+        margin-top: 15px;
+        border-radius: 5px;
+      }
+
+      .delete-btn {
+        background: red;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+      }
+
+      body {
+        background: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        width: 450px;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .input-box {
+        display: flex;
+        gap: 10px;
+      }
+
+      input {
+        flex: 1;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+      }
+
+      button {
+        padding: 12px 20px;
+        border: none;
+        background: black;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #333;
+      }
+
+      .task {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #f9f9f9;
+        padding: 12px;
+        margin-top: 15px;
+        border-radius: 5px;
+      }
+
+      .delete-btn {
+        background: red;
+      }
     </style>
-</head>
-<body>
-    <!-- <div>content<p>paragraph</p></div>  -->
-   <div class="parent">
-    <div class="child">child1</div>
-    <div class="child">child2</div>
-    <div class="child">child3</div>
-    <div class="child">child4</div>
-    <div class="child">child1</div>
-    <div class="child">child2</div>
-    <div class="child">child3</div>
-    <div class="child">child4</div>
-   </div>
+  </head>
 
-    
+  <body>
 
+    <div class="container">
+        <h1>To-Do App</h1>
+        <div class="input-box">
+            <input type="text" id="inp" placeholder="enter task">
+            <button onclick="addtask()">Add</button>
+        </div>
+        <div id="tasklist">
+
+        </div>
+    </div>
+
+    <script>
+        let tasks=JSON.parse(localStorage.getItem('jfs3tasks')) || []
+        displaytask()
+        function addtask(){
+        let inp=document.getElementById('inp')
+        if(inp.value==""){
+            alert('please enter value')
+            return ""
+        }
+        tasks.push(inp.value)
+        localStorage.setItem('jfs3tasks',JSON.stringify(tasks))
+        console.log(tasks)
+        inp.value=''
+        displaytask()
+        }
+
+
+        function displaytask(){
+            let tasklist=document.getElementById('tasklist')
+            tasklist.innerHTML=''
+            let data=tasks.map((val,ind)=>{
+                tasklist.innerHTML+=`
+                <div class='task'>
+                 <h3>${val}</h3>    
+                 <button class='delete-btn' onclick='deletetask(${ind})' >del</button>
+                </div>
+                `
+            })
+        }
+        function deletetask(delitem){ 0
+            tasks=tasks.filter((val,index)=>{
+              return delitem!=index
+            })
+            localStorage.setItem('jfs3tasks',tasks)
+            displaytask()
+        } 
+
+
+    </script>
     
-</body>
+   
+  </body>
 </html>
